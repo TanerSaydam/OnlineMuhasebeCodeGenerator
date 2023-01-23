@@ -76,9 +76,17 @@ public partial class MyToolWindowControl : UserControl
     }
 
     private void entitiesCB_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
-    {    
-        string fileName = e.AddedItems[0].ToString();
-        checkFileExist(fileName);
+    {
+        try
+        {
+            string fileName = e.AddedItems[0].ToString();
+            checkFileExist(fileName);
+        }
+        catch (Exception ex)
+        {
+            
+        }
+        
     }
 
     public void checkFileExist(string fileName)
