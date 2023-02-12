@@ -53,7 +53,7 @@ public partial class MyToolWindowControl : UserControl
         {
             Path = Paths.CompanyEntities;
             SelectedEntities = Paths.CompanyEntitiesUsingPath;
-            SelectedRepository = "Company";
+            SelectedRepository = "CompanyDb";
             SelectedService = "CompanyServices";
             RepositoryDISpot = "CompanyRepositoryDISpot";
             ServiceDISpot = "CompanyServiceDISpot";
@@ -308,9 +308,9 @@ public static class Paths
         $"{Paths.ProjectPath}/{Paths.Persistance}/{FolderNames.Services}/{FolderNames.AppServices}";
 
     public static readonly string CompanyServiceInterfacePath =
-        $"{Paths.ProjectPath}/{Paths.Application}/{FolderNames.Services}/{FolderNames.AppServices}";
+        $"{Paths.ProjectPath}/{Paths.Application}/{FolderNames.Services}/{FolderNames.CompanyServices}";
     public static readonly string CompanyServiceClassPath =
-        $"{Paths.ProjectPath}/{Paths.Persistance}/{FolderNames.Services}/{FolderNames.AppServices}";
+        $"{Paths.ProjectPath}/{Paths.Persistance}/{FolderNames.Services}/{FolderNames.CompanyServices}";
     #endregion
 
     #region ControllerPath
